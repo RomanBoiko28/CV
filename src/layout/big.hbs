@@ -10,49 +10,29 @@
       {{page.title}}
     </title>
     <meta charset='utf-8' />
-
-  
+    <link href='css/index.css' rel='stylesheet' />
   </head>
 
   <body>
     {{!-- <style>
-      stule="display: block;
+      style="display: block;
       white-space: pre"
       contenteditable="">
-      *{
+      * {
         font-size: 18px;
         transition: .3s all;
         background: red;
         color: white
-      } --}}
-    </style>
-    {{#with header}}
-    <header>
-      <div>
-        <h1>{{name.firstname}} {{name.lastname}}</h1>
-      </div>
-      <div>
-        <b>{{position}}</b>
-      </div>
-      <br />
-      <div>
-        <em>{{sallary}}</em>
-      </div>
-      <br>
-    <div>
-      <em>{{address}}</em>
-    </div>
-     <hr>
-    </header>
-    {{/with}}
-
+      } изменение стиля в HTML!!!--}} 
     {{> nav}}
-    
+<br>
+<hr>
+
     {{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   }}
     {{{body}}}
 
-
     {{>footer}}
+   
   </body>
 
 </html>
