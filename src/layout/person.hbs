@@ -1,0 +1,34 @@
+{{! 
+  Це леяут по замовчюванню, котрий вже містить базову структуру HTML документа
+  І котрий обгортає код container файлів для будь-яких ендпоїнтів
+}}
+
+<html>
+
+  <head>
+    <title>
+      Person page
+    </title>
+    <meta charset='utf-8' />
+
+  </head>
+
+  <body>
+    {{! <style>
+      stule="display: block;
+      white-space: pre"
+      contenteditable="">
+      *{
+        font-size: 18px;
+        transition: .3s all;
+        background: red;
+        color: white
+        </style>
+      } }}
+
+    {{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   }}
+    {{{body}}}
+
+  </body>
+
+</html>
