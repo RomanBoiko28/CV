@@ -7,13 +7,15 @@
 
   <head>
     <title>
-      bio page
+      {{page.title}}
     </title>
     <meta charset='utf-8' />
+
+  
   </head>
 
   <body>
-    {{! <style>
+    {{!-- <style>
       stule="display: block;
       white-space: pre"
       contenteditable="">
@@ -22,11 +24,35 @@
         transition: .3s all;
         background: red;
         color: white
-      } }}
+      } --}}
+    </style>
+    {{#with header}}
+    <header>
+      <div>
+        <h1>{{name.firstname}} {{name.lastname}}</h1>
+      </div>
+      <div>
+        <b>{{position}}</b>
+      </div>
+      <br />
+      <div>
+        <em>{{sallary}}</em>
+      </div>
+      <br>
+    <div>
+      <em>{{address}}</em>
+    </div>
+     <hr>
+    </header>
+    {{/with}}
 
+    {{> nav}}
+    
     {{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   }}
     {{{body}}}
 
+
+    {{>footer}}
   </body>
 
 </html>
